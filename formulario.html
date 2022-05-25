@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--Formulario para exercicio de html com valores para inclusão no script-->
+<html lang="en">
+<head>
+    <title>Testando formulario </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type">
+    <meta name="description" content="Criação de formulários HTML">    
+</head>
+<body>
+
+<h1>Formulário para dados pessiais</h1>
+
+<!--Inicio do formulario e metodo seguro declarado-->
+<form action="DadosPessoais.php" method="post">
+
+    <!--Informações do formulário para preenchimento-->
+    <fieldset>
+    <legend>Informações do Usuário</legend>
+    <table cellspacing="8">
+
+        <tr>
+            <td>
+                <label for="nome">Nome: </label>
+            </td>
+            
+            <td align="left">
+                <input type="text" name="Nome" value="Digite o seu nome">
+            </td>
+            
+            <tr>
+                <td>
+                    <label>Data de nascimento:</label>
+                 </td>
+
+                 <td align="left">
+                    <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                    <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                    <input type="text" name="ano" size="4" max="4" value="aaaa">
+                 </td>
+                    </tr>
+
+                    <td>
+                        <label for="Reg">Região:</label>
+                        </td>
+                        <td align="left">
+                            <select name="Reg">
+                                <option value="N">Norte</option>
+                                <option value="NE">NE</option>
+                                <option value="CO">CO</option>
+                                <option value="SE">SE</option>
+                                <option value="S">SUL</option>
+                            </select>
+                        </td>
+
+                        <td>
+                        <label for="senha">Senha:</label>
+                        </td>
+                        <td align="left">
+                        <input type="password" name="senha" placeholder="Digite sua senha">
+                        </td>
+                        </tr>
+                        </table>        
+    </fieldset>
+
+    <!--Envio de dados/reset-->
+     <input type="submit" value="Enviar">
+     <input type="reset" value="Limpar Formulário">
+</form>
+
+
+
+</body>
+</html>
